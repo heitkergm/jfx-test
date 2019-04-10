@@ -203,7 +203,7 @@
                 <plugin>
                     <groupId>io.takari</groupId>
                     <artifactId>maven</artifactId>
-                    <version>0.7.4</version>
+                    <version>0.7.5</version>
                 </plugin>
             </plugins>
         </pluginManagement>
