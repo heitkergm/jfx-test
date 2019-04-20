@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
 
     <prerequisites>
-        <maven>3.6.0</maven>
+        <maven>3.6.1</maven>
     </prerequisites>
 
     <name>helloearthrise</name>
@@ -181,7 +181,7 @@
                         <configuration>
                             <rules>
                                 <requireMavenVersion>
-                                    <version>3.6.0</version>
+                                    <version>3.6.1</version>
                                 </requireMavenVersion>
                                 <requireJavaVersion>
                                     <version>${java.version}</version>
@@ -203,7 +203,7 @@
                 <plugin>
                     <groupId>io.takari</groupId>
                     <artifactId>maven</artifactId>
-                    <version>0.7.5</version>
+                    <version>0.7.6</version>
                 </plugin>
             </plugins>
         </pluginManagement>
