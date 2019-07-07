@@ -98,7 +98,7 @@ public class HelloEarthRiseMain extends Application {
         transTransition.setCycleCount(Timeline.INDEFINITE);
         
         // Create an ImageView containing the Image
-        Image image = new Image("http://projavafx.com/images/earthrise.jpg");
+        Image image = new Image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/NASA-Apollo8-Dec24-Earthrise-b.jpg/800px-NASA-Apollo8-Dec24-Earthrise-b.jpg");
         ImageView iv = new ImageView(image);
        
         // Create a ScrollPane containing the text
