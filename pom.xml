@@ -17,20 +17,20 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>13</java.version>
         <javafx.version>13.0.2</javafx.version>
-        <asm.version>7.3.1</asm.version>
+        <asm.version>8.0</asm.version>
         <maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-        <maven-dependency-plugin.version>3.1.1</maven-dependency-plugin.version>
+        <maven-dependency-plugin.version>3.1.2</maven-dependency-plugin.version>
         <maven-deploy-plugin.version>3.0.0-M1</maven-deploy-plugin.version>
         <maven-enforcer-plugin.version>3.0.0-M3</maven-enforcer-plugin.version>
         <maven-install-plugin.version>3.0.0-M1</maven-install-plugin.version>
         <maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
         <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
-        <maven-shade-plugin.version>3.2.1</maven-shade-plugin.version>
-        <maven-site-plugin.version>3.8.2</maven-site-plugin.version>
+        <maven-shade-plugin.version>3.2.2</maven-shade-plugin.version>
+        <maven-site-plugin.version>3.9.0</maven-site-plugin.version>
         <maven-surefire-plugin.version>3.0.0-M4</maven-surefire-plugin.version>
-        <plexus-compiler-api.version>2.8.5</plexus-compiler-api.version>
-        <plexus-javac.version>2.8.5</plexus-javac.version>
+        <plexus-compiler-api.version>2.8.6</plexus-compiler-api.version>
+        <plexus-javac.version>2.8.6</plexus-javac.version>
         <versions-maven-plugin.version>2.7</versions-maven-plugin.version>
     </properties>
 
@@ -215,25 +215,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
                 <version>${maven-dependency-plugin.version}</version>
-            </plugin>
-            <plugin>
-                <groupId>io.snyk</groupId>
-                <artifactId>snyk-maven-plugin</artifactId>
-                <version>1.2.5</version>
-                <executions>
-                    <execution>
-                        <id>snyk-test</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>test</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <apiToken>${SNYK_API_TOKEN}</apiToken>
-                    <failOnSeverity>false</failOnSeverity>
-                    <org></org>
-                </configuration>
             </plugin>
         </plugins>
         <pluginManagement>
