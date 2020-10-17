@@ -15,8 +15,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>14</java.version>
-        <javafx.version>14.0.2.1</javafx.version>
+        <java.version>15</java.version>
+        <javafx.version>15</javafx.version>
         <asm.version>9.0</asm.version>
         <maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
